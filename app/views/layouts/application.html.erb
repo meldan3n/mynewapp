@@ -13,16 +13,30 @@
     <%= csp_meta_tag %>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav>
+    <nav id="mynavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName navbar-brand">
+            <a href="#homepage">BikeSwiperz</a>
+          </div><!--end projectName -->
+        </div><!--end navbar header-->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" id="navright">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+          </ul><!--end ul navright-->
+        </div><!--end nav-->
+      </div><!--end nav container-->
+    </nav><!--end navbar-->
     <%= yield %>
-    <footer>
-      <br>
+    <footer class="footer">
       &copy; 2018 BikeSwiperz GmbH & Co. KG
     </footer>
   </body>

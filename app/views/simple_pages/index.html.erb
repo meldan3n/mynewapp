@@ -1,10 +1,33 @@
-<h1>Welcome to BikeSwiperz</h1>
-<h2>Buy stolen bikes very cheap!</h2>
+<div class="container-fluid" id="top">
+  <div class="header">
+    <h1>Welcome to BikeSwiperz</h1>
+    <h2>Buy stolen bikes very cheap!</h2>
+  </div><!--end header-->
+</div><!--end container-->
 <!-- <p>Welcome! The date and time is <%#= Time.now %></p> -->
 <%# test_variable = 42 %>
 <%#= test_variable %>
 <%#= test_variable - 2 %>
-<%= image_tag("bike.png", class: "img-responsive my-image") %>
-<h3>NEW: Random stolen bike of the day!</h3>
-<br>
-<p>For more information, visit our Contact or About page!</p>
+<div class="container-fluid" id="fluidabout">
+  <div class="row" id="aboutme">
+    <div class="col-md-4 col-xs-12" id="col1">
+      <%= image_tag("bike.png", class: "img-responsive my-image", id: "profile") %>
+    </div><!--end col-md-4-->
+    <div class="col-md-4 col-xs-12" id="col2">
+      <h2>NEW</h2>
+      <p>Random stolen bike of the day! Contact us for more information.</p>
+    </div><!--end col-md-4-->
+    <div class="col-md-4 col-xs-12" id="col3">
+      <h3>OUR STOCK</h3>
+      <ul id="skill-list">
+        <li>Schwinn Wayfarer 700c</li>
+        <li>Firmstrong Urban Lady Beach Cruiser</li>
+        <li>Dynacraft Speed Alpine Eagle</li>
+        <li>Mongoose Dolomite</li>
+        <li>Random "Deutsches Fahrrad aus der Stadtmitte"</li>
+        <li>GMC Denali Road Bike</li>
+        <li>Razor 62042 High Roller BMX</li>
+      </ul>
+    </div><!--end col-md-4-->
+  </div><!--end row-->
+</div><!--end container-fluid-->

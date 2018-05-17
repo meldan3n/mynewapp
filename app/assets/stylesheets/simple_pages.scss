@@ -1,9 +1,11 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* { box-sizing: border-box; }
 
 body {
   background-color: #F7F8E0;
+  margin-top: 51px;
 }
 
 h1 {
@@ -12,6 +14,103 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  margin-bottom: 30px;
+}
+
 h1, h2, h3 {
   font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+#contactmail {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-default {
+	background-color: rgba(0,0,0,1);
+}
+
+#navright a {
+	color: red;
+	text-transform: uppercase;
+	font-weight: 550;
+}
+
+#navright a:hover {
+	color: yellow;
+	text-decoration: none;
+}
+
+.projectName a {
+  color: red;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#top h1,h2 {
+  text-align: center;
+}
+
+#profile {
+  margin: auto;
+  display: block;
+}
+
+#col2>h2 {
+	font-family: Segoe UI, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+}
+
+#col2b>p {
+	font-family: Book Antiqua, Georgia, serif;
+	font-size: 2em;
+	font-weight: 500;
+	-webkit-margin-before: 0;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+}
+
+#col2>p {
+	font-family: Book Antiqua, Georgia, serif;
+	font-size: 2em;
+	font-weight: 500;
+	-webkit-margin-before: 0;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+
+#col3>h3 {
+	font-family: Segoe UI, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-left: 5%;
+	color: black;
+	font-size: 2.5em;
+}
+
+#skill-list>li {
+	font-family: Georgia, Book Antiqua, serif;
+	color: black;
+	font-size: 1.7em;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
